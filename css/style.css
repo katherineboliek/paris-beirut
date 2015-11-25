@@ -1,0 +1,44 @@
+/*call font faces*/
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,700,300|Droid+Serif:400,400italic,700,700italic);
+body {
+  font-family: 'Droid Serif', serif;
+  color: #3d3d3d;
+}
+
+h1 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  color: #454545;
+}
+
+h4 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  font-size: 1.65em;
+  color: #454545;
+}
+
+p {
+  font-family: 'Droid Serif', serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.6em;
+}
+
+.investigate {
+  font-weight: 700;
+  font-style: italic;
+  font-size: 1em;
+  color: #454545;
+}
+
+hr.break {
+  border-top: 1px solid #3d3d3d;
+  width:
+}
+
+/**/
+/**/
+#map { height: 50%; width: 100%;}
+/*insert media query to change map size for mobile and desktop*/
+/*iphone 6 { height: 40%; width: 360px;}*/

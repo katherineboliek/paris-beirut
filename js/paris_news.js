@@ -98,5 +98,5 @@ function loadGoogleNews(){
         }
     });
 
-    //loadTwitter();
+    callFlickr();
 }

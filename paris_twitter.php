@@ -1,5 +1,15 @@
 <html>
   <head>
+    <link href="css/bootstrap.min.css" rel="stylesheet"> <!--bootstrap css-->
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="js/tweetLinkIt.js"></script>
+    <script>
+      function pageComplete(){
+          console.log("pagecomplete")
+          $('.tweet').tweetLinkify();
+      }
+    </script>
   </head>
   <body>
     <?php
@@ -49,10 +59,12 @@
 
       foreach($tweetData['statuses'] as $items)
         {
-          echo "<div class='twitter-tweet'>Tweet: " . $items['text'] . "'</div>'";
+          echo "<div class='tweet'>Tweet: " . $items['text'] . "'</div>'";
           echo "When: " . $items['created_at'] . "</br>";
           echo "Where: " . $items['location'] . "</br>";
-        }
+        };
+
+      echo "<script>pageComplete();</script>";
     ?>
   </body>
 </html>

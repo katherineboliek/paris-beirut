@@ -10,15 +10,21 @@
 
   <body>
     <!--navigation-->
-    <div class="col-xs-12">
+    <div class="row" id="navigation">
       <!--title-->
+      <div class="col-xs-7"><a href="index.html">Two Days, Two Attacks</a></div>
       <!--button options-->
+      <div class="col-xs-5">
+        <div class="col-xs-4"><a href="paris.html"><img src="css/parissm.png" height="20" width="20" class="nav-img"></a></div>
+        <div class="col-xs-4"><a href="beirut.html"><img src="css/beirutsm.png" height="20" width="20" class="nav-img"></a></div>
+        <div class="col-xs-4"><a href="comparison.html"><img src="css/comparesm.png" height="20" width="20" class="nav-img"></a></div>
+      </div>
     </div>
     <div class="container">
       <!--summary of event-->
       <div class="col-xs-12">
         <h1>Beirut</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dapibus lacinia leo et venenatis. Aenean lobortis tristique maximus. Maecenas vitae tristique nunc. Suspendisse ultricies ex id dui pulvinar gravida. Aliquam erat volutpat. Duis at orci neque. In dapibus erat quis sapien scelerisque dapibus. Integer ultrices dignissim nisi quis gravida. Aenean dignissim nisl sit amet leo consequat hendrerit. Praesent facilisis tempus purus consectetur sodales. Nullam eu consectetur sapien, eget tempus neque.</p>
+        <p>In Beirut, there were two suicide bombings in the marketplace of Bourj el-Barajneh, only a few minutes apart and several meters apart. A third man was discovered with explosives on him, but he was killed, most likely by one of the other blasts, before he could detonate his vest. 43 were killed in the attack and more than 200 were injured.</p>
       </div>
       <!--map-->
       <div class="col-xs-12">
@@ -39,15 +45,12 @@
         </div> <!--buttons-->
         <div class="tab-content">
           <div class="tab-pane active" id="nytimes">
-            <h3>New York Times</h3>
             <div id="nytimes"></div>
           </div>
           <div class="tab-pane" id="theguardian">
-        	  <h3>The Guardian</h3>
       	    <div id="guardian"></div>
       	  </div>
           <div class="tab-pane" id="googlenews">
-            <h3>Google News</h3>
             <div id="google"></div>
           </div>
         </div> <!--content-->
@@ -65,12 +68,13 @@
       <!--twitter-->
       <div class="col-xs-12">
         <h3>Twitter</h3>
-        <iframe src="beirut_twitter.php">
+        <iframe src="beirut_twitter.php" width="100%" frameborder="0">
         </iframe>
       </div>
     </div>
     <!--footer-->
-    <div class="col-xs-12">
+    <div class="row" id="footer">
+      <a href="#navigation">Back to Top</a>
     </div>
 
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script> <!--jquery-->

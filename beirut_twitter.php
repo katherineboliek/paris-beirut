@@ -24,44 +24,23 @@
           'consumer_secret' => "mDskSXRoE4Hj61QqY3MPuQh6nG37IqviFQ2eJNqGAVKgyq3uve"
       );
 
-      /** URL for REST request, see: https://dev.twitter.com/docs/api/1.1/ **/
-       $url = 'https://api.twitter.com/1.1/search/tweets.json'; // what part we want to request from/
-       $requestMethod = 'POST';
-
-       /** POST fields required by the URL above. See relevant docs as above **/
-      // $postfields = array(
-      //     'screen_name' => 'usernameToBlock',
-      //     'skip_status' => '1'
-      // );
-      //
-      // /** Perform a POST request and echo the response **/
-      // $twitter = new TwitterAPIExchange($settings);
-      // echo $twitter->buildOauth($url, $requestMethod)
-      //              ->setPostfields($postfields)
-      //              ->performRequest();
-
       /** Perform a GET request and echo the response **/
       /** Note: Set the GET field BEFORE calling buildOauth(); **/
       $url = 'https://api.twitter.com/1.1/search/tweets.json'; // get request only need oe of post and get request
       $getfield = '?q=beirutbombings';
       $requestMethod = 'GET';
       $twitter = new TwitterAPIExchange($settings);
-      // echo $twitter->setGetfield($getfield)
-      //              ->buildOauth($url, $requestMethod)
-      //              ->performRequest();
-
 
       $tweetData = json_decode($twitter->setGetfield($getfield)
                     ->buildOauth($url, $requestMethod)
                     ->performRequest(),$assoc = TRUE);
 
-      echo $tweetData;
-
       foreach($tweetData['statuses'] as $items)
         {
-          echo "<div class='tweet'>Tweet: " . $items['text'] . "'</div>'";
-          echo "When: " . $items['created_at'] . "</br>";
-          echo "Where: " . $items['location'] . "</br>";
+          echo "<div class='row twit'><div class='col-xs-2'><img class='profile-image' src='" . $items['user']['profile_image_url'] . "'/></div>";
+          echo "<div class='tweet col-xs-10'>" . $items['user']['name'] . " ";
+          echo "@" . $items['user']['screen_name'] . " </br>";
+          echo $items['text'] . "</div></div></br>";
         };
 
       echo "<script>pageComplete();</script>";

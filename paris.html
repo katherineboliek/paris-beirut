@@ -28,22 +28,28 @@
       </div>
       <div class="col-xs-12">
         <!--buttons here-->
-        <div></div> <!--buttons-->
-        <div class="news">
-          <div class="content" id="nytimes">
+        <div>
+          <ul class="nav nav-tabs" role="tablist">
+            <li class="nav active"><a href="#nytimes" data-toggle="tab">The New York Times</a></li>
+            <li class="nav"><a href="#theguardian" data-toggle="tab">The Guardian</a></li>
+            <li class="nav"><a href="#googlenews" data-toggle="tab">Google News</a></li>
+          </ul>
+        </div> <!--buttons-->
+        <div class="tab-content">
+          <div class="tab-pane active" id="nytimes">
             <h3>New York Times</h3>
             <div id="nytimes"></div>
           </div>
-          <div class="content" id="theguardian">
+          <div class="tab-pane" id="theguardian">
         	  <h3>The Guardian</h3>
       	    <div id="guardian"></div>
       	  </div>
-          <div class="content active" id="googlenews">
+          <div class="tab-pane" id="googlenews">
             <h3>Google News</h3>
             <div id="google"></div>
           </div>
         </div> <!--content-->
-      </div>
+      </div> <!--end news-->
       <!--public-->
       <div class="">
         <h2>Public</h2>

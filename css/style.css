@@ -83,6 +83,11 @@ hr.break {
   width: 100%;
   margin-bottom: 10px;}
 
+.flickrpic {
+  display: block;
+  margin: auto;
+}
+
 iframe {
   border: none;
 }

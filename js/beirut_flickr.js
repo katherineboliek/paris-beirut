@@ -4,7 +4,7 @@ function callFlickr(){
         $.getJSON(apiurl,function(json){
 
             $.each(json.items,function(i,data){
-                html += '<img src ="' + data.media.m + '">'
+                html += "<div><img src ='" + data.media.m + "' class='flickrpic'></div>"
                 });
             $("#flickr").append(html);
         });

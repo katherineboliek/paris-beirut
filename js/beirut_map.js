@@ -4,6 +4,8 @@ function initMap() {
   map = new google.maps.Map(document.getElementById('map'), {
     center: {lat: 33.87, lng: 35.498738},
     zoom: 12,
+    scrollwheel: false,
+    mapTypeControl: false,
     mapTypeId: google.maps.MapTypeId.ROADMAP
   });
 

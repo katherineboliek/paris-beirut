@@ -59,9 +59,10 @@
 
       foreach($tweetData['statuses'] as $items)
         {
-          echo "<div class='tweet'>Tweet: " . $items['text'] . "'</div>'";
-          echo "When: " . $items['created_at'] . "</br>";
-          echo "Where: " . $items['location'] . "</br>";
+          echo "<div class='row twit'><div class='col-xs-2'><img class='profile-image' src='" . $items['user']['profile_image_url'] . "'/></div>";
+          echo "<div class='tweet col-xs-10'>" . $items['user']['name'] . " ";
+          echo "@" . $items['user']['screen_name'] . " </br>";
+          echo $items['text'] . "</div></div></br>";
         };
 
       echo "<script>pageComplete();</script>";

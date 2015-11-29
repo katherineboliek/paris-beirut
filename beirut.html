@@ -37,7 +37,7 @@
       <div class="col-xs-12">
         <!--buttons here-->
         <div>
-          <ul class="nav nav-tabs" role="tablist">
+          <ul class="nav nav-tabs nav-justified">
             <li class="nav active"><a href="#nytimes" data-toggle="tab">The New York Times</a></li>
             <li class="nav"><a href="#theguardian" data-toggle="tab">The Guardian</a></li>
             <li class="nav"><a href="#googlenews" data-toggle="tab">Google News</a></li>
@@ -59,22 +59,29 @@
       <div class="">
         <h2>Public</h2>
       </div>
+      <div>
+        <ul class="nav nav-tabs nav-justified">
+          <li class="nav active"><a href="#flickrtab" data-toggle="tab">Flickr</a></li>
+          <li class="nav"><a href="#twittertab" data-toggle="tab">Twitter</a></li>
+        </ul>
+      </div> <!--buttons-->
+      <div class="tab-content">
       <!--flickr-->
-      <div class="col-xs-12">
-        <h3>Flickr</h3>
-        <div id="flickr">
+        <div class="tab-pane active" id="flickrtab">
+          <div id="flickr">
+          </div>
+        </div>
+        <!--twitter-->
+        <div class="tab-pane" id="twittertab">
+          <iframe src="beirut_twitter.php" width="100%" frameborder="0">
+          </iframe>
         </div>
       </div>
-      <!--twitter-->
-      <div class="col-xs-12">
-        <h3>Twitter</h3>
-        <iframe src="beirut_twitter.php" width="100%" frameborder="0">
-        </iframe>
-      </div>
     </div>
+    </br>
     <!--footer-->
     <div class="row" id="footer">
-      <a href="#navigation">Back to Top</a>
+      <a href="#navigation"><p>Back to Top</p></a>
     </div>
 
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script> <!--jquery-->

@@ -12,7 +12,9 @@ h1 {
 }
 
 h2 {
-
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  color: #454545;
 }
 
 h3{
@@ -33,19 +35,29 @@ p {
   line-height: 1.6em;
 }
 
-.investigate {
-  font-weight: 700;
-  font-style: italic;
-  font-size: 1em;
-  color: #454545;
-}
-
 hr.break {
   border-top: 1px solid #3d3d3d;
   width:
 }
 
-/**/
+/*index styles*/
+.investigate {
+  font-weight: 700;
+  font-style: italic;
+  font-size: 0.9em;
+  color: #454545;
+  text-align: center;
+  border-top: 1px solid #3d3d3d;
+  margin: 5px 0 15px 0;
+  padding-top: 10px;
+}
+
+.page-images {
+  display: block;
+  margin: auto;
+}
+
+/*paris and beirut styling*/
 #navigation {
   padding: 10px 0 10px 10px;
   background-color: #262626;
@@ -65,23 +77,32 @@ hr.break {
   margin-top: 2px;
 }
 
+#map {
+  height: 50%;
+  width: 100%;
+  margin-bottom: 10px;}
+
 iframe {
   border: none;
 }
 
 #footer {
   background-color: #262626;
-  padding: 5px 40% 10px 40%;
+  padding: 7px 0 7px 0;
 }
 
-#footer a {
+#footer p {
   font-family: 'Oswald', sans-serif;
-  font-size: 17px;
+  font-size: 19px;
   font-weight: 400;
   color: #ffffff;
+  text-align: center;
 }
 
-/**/
-#map { height: 50%; width: 100%;}
+#footer a:hover {
+  text-decoration: none;
+}
+
+
 /*insert media query to change map size for mobile and desktop*/
 /*iphone 6 { height: 40%; width: 360px;}*/

@@ -55,14 +55,13 @@
                     ->buildOauth($url, $requestMethod)
                     ->performRequest(),$assoc = TRUE);
 
-      echo $tweetData;
 
       foreach($tweetData['statuses'] as $items)
         {
           echo "<div class='row twit'><div class='col-xs-2'><img class='profile-image' src='" . $items['user']['profile_image_url'] . "'/></div>";
-          echo "<div class='tweet col-xs-10'>" . $items['user']['name'] . " ";
-          echo "@" . $items['user']['screen_name'] . " </br>";
-          echo $items['text'] . "</div></div></br>";
+          echo "<div class='tweet col-xs-10'><p class='name-twit'>" . $items['user']['name'] . " </p>";
+          echo "@" . $items['user']['screen_name'];
+          echo " </br>" . $items['text'] . "</div></div><hr class='break-twit'>";
         };
 
       echo "<script>pageComplete();</script>";

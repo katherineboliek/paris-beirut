@@ -15,16 +15,17 @@ var marker = new google.maps.Marker({
     title: 'Bourj al-Barajneh'
   });
 
-  var contentString = '<div id="content">'+
+  var contentString = '<div class="mapcontent">'+
         '<div id="siteNotice">'+
         '</div>'+
-        '<h1 id="firstHeading" class="firstHeading">Bourj al-Barajneh</h1>'+
-        '<div id="bodyContent">'+
+        '<h3>Bourj al-Barajneh</h3>'+
+        '<div id="bodyContent"><p>Before 6PM, there were two suicide bombings in Bourjal-Barajneh, a suburb of Beirut known for being the home of many Shia Hezbollah. The first explosion was at a Shia mosque and the second was a nearby bakery. 43 people were killed in the two attacks.</p>'+
         '</div>'+
         '</div>';
 
 var infowindow = new google.maps.InfoWindow({
-  content: contentString
+  content: contentString,
+  maxWidth: 400
 });
 
 marker.addListener('click', function() {

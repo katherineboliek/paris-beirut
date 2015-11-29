@@ -15,16 +15,17 @@ var marker = new google.maps.Marker({
     title: 'Le Carillon'
   });
 
-  var contentString = '<div id="content">'+
+  var contentString = '<div class="mapcontent">'+
         '<div id="siteNotice">'+
         '</div>'+
-        '<h1 id="firstHeading" class="firstHeading">Le Carillon</h1>'+
-        '<div id="bodyContent">'+
+        '<h3>Le Carillon &amp; Le Petit Cambodge</h3>'+
+        '<div id="bodyContent"><p>Minutes after the attack on the Stade de France, gunmen opened fire on these two resturants, killing at least 14.</p>'+
         '</div>'+
         '</div>';
 
 var infowindow = new google.maps.InfoWindow({
-  content: contentString
+  content: contentString,
+  maxWidth: 400
 });
 
 marker.addListener('click', function() {
@@ -37,16 +38,17 @@ var markertwo = new google.maps.Marker({
     title: 'Stade de France'
   });
 
-  var contentStringTwo = '<div id="content">'+
+  var contentStringTwo = '<div class="mapcontent">'+
         '<div id="siteNotice">'+
         '</div>'+
-        '<h1 id="firstHeading" class="firstHeading">Stade de France</h1>'+
-        '<div id="bodyContent">'+
+        '<h3>Stade de France</h3>'+
+        '<div id="bodyContent"><p>The first attack was outside the stadium around 9:20 PM with three suicide bombers denotating outside the stadium. Four people were killed, including the three bombers.</p>'+
         '</div>'+
         '</div>';
 
 var infowindowtwo = new google.maps.InfoWindow({
-  content: contentStringTwo
+  content: contentStringTwo,
+  maxWidth: 400
 });
 
 markertwo.addListener('click', function() {
@@ -59,42 +61,44 @@ var markerthree = new google.maps.Marker({
     title: 'The Bataclan'
   });
 
-  var contentStringThree = '<div id="content">'+
+  var contentStringThree = '<div class="mapcontent">'+
         '<div id="siteNotice">'+
         '</div>'+
-        '<h1 id="firstHeading" class="firstHeading">The Bataclan</h1>'+
-        '<div id="bodyContent">'+
+        '<h3>The Bataclan</h3>'+
+        '<div id="bodyContent"><p>Around 9:40, gunmen entered the concert hall and opened fire on the audience of the American band, the Eagles of Death Metal, who was performing at the time. They then held remaining concertgoers hostage until the police raided the scene at 12:20AM. 89 people were killed in this assualt.</p>'+
         '</div>'+
         '</div>';
 
 var infowindowthree = new google.maps.InfoWindow({
-  content: contentStringThree
+  content: contentStringThree,
+  maxWidth: 400
 });
 
 markerthree.addListener('click', function() {
   infowindowthree.open(map, markerthree);
 });
 
-var markerthree = new google.maps.Marker({
+var markerfour = new google.maps.Marker({
     position: {lat: 48.853784, lng: 2.382070},
     map: map,
     title: 'La Belle Equipe'
   });
 
-  var contentStringThree = '<div id="content">'+
+  var contentStringFour = '<div class="mapcontent">'+
         '<div id="siteNotice">'+
         '</div>'+
-        '<h1 id="firstHeading" class="firstHeading">La Belle Equipe</h1>'+
-        '<div id="bodyContent">'+
+        '<h3>La Belle Equipe</h3>'+
+        '<div id="bodyContent"><p>At 9:36, gunmen fired outside the resturant killing 19 people.</p>'+
         '</div>'+
         '</div>';
 
-var infowindowthree = new google.maps.InfoWindow({
-  content: contentStringThree
+var infowindowfour = new google.maps.InfoWindow({
+  content: contentStringFour,
+  maxWidth: 400
 });
 
-markerthree.addListener('click', function() {
-  infowindowthree.open(map, markerthree);
+markerfour.addListener('click', function() {
+  infowindowfour.open(map, markerfour);
 });
 
 

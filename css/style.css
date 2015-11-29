@@ -18,7 +18,9 @@ h2 {
 }
 
 h3{
-
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
 }
 
 h4 {
@@ -37,7 +39,6 @@ p {
 
 hr.break {
   border-top: 1px solid #3d3d3d;
-  width:
 }
 
 /*index styles*/
@@ -84,6 +85,20 @@ hr.break {
 
 iframe {
   border: none;
+}
+
+hr.break-twit {
+  border-top: 1px solid #E1E8ED;
+  margin-bottom: 10px;
+}
+
+.profile-image {
+  border-radius: 5px;
+}
+
+.name-twit {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
 }
 
 #footer {

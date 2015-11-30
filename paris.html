@@ -15,49 +15,61 @@
       <div class="col-xs-7"><a href="index.html">Two Days, Two Attacks</a></div>
       <!--button options-->
       <div class="col-xs-5">
-        <div class="col-xs-4"><a href="paris.html"><img src="css/parissm.png" height="20" width="20" class="nav-img"></a></div>
-        <div class="col-xs-4"><a href="beirut.html"><img src="css/beirutsm.png" height="20" width="20" class="nav-img"></a></div>
-        <div class="col-xs-4"><a href="comparison.html"><img src="css/comparesm.png" height="20" width="20" class="nav-img"></a></div>
+        <div class="col-xs-4"><a href="paris.html"><img src="css/parissm.png" height="24" width="24" class="nav-img"></a></div>
+        <div class="col-xs-4"><a href="beirut.html"><img src="css/beirutsm.png" height="24" width="24" class="nav-img"></a></div>
+        <div class="col-xs-4"><a href="comparison.html"><img src="css/comparesm.png" height="24" width="24" class="nav-img"></a></div>
       </div>
     </div>
     <div class="container">
       <!--summary of event-->
-      <h1>Paris</h1>
-      <p>The Paris attack on November 13th, 2015 involved several coordinated events on Friday evening, November 13th. FIrst there were suicide bombers outside the Stade de France, then shootings and suicide bombings at restaurants. Lastly there was a mass shooting in the Bataclan where hostages were then held. 130 people were killed and 368 injuries.</p>
+      <div class="row">
+        <div class="col-xs-12">
+          <h1>Paris</h1>
+          <p>The Paris attack on November 13th, 2015 involved several coordinated events on Friday evening, November 13th. FIrst there were suicide bombers outside the Stade de France, then shootings and suicide bombings at restaurants. Lastly there was a mass shooting in the Bataclan where hostages were then held. 130 people were killed and there were 368 injuries.</p>
+        </div>
+      </div>
       <!--map-->
-      <div class="col-xs-12">
-        <div id="map"></div>
+      <div class="row">
+        <div class="col-xs-12">
+          <div id="map"></div>
+        </div>
       </div>
       <!--news-->
-      <div>
-        <h2>Media</h2>
-        <p>insert paragraph about media coverage</p>
+      <div class="row">
+        <div class="col-xs-12">
+          <h2>Media</h2>
+          <p>Articles were quickly written about the Paris attack before it was even over, including updates as it unfolded and analysis of the whole process afterwards. <a href="http://www.huffingtonpost.com/entry/paris-and-beirut-data-show-how-social-media-shapes-coverage_564fdda8e4b0258edb31b56b">According to the Huffington Post</a>, during the first 30 hours after the attack 4,507 media sources covered Paris.</p>
+        </div>
       </div>
-      <div class="col-xs-12">
-        <!--buttons here-->
-        <div>
-          <ul class="nav nav-tabs nav-justified">
-            <li class="nav active"><a href="#nytimes" data-toggle="tab">The New York Times</a></li>
-            <li class="nav"><a href="#theguardian" data-toggle="tab">The Guardian</a></li>
-            <li class="nav"><a href="#googlenews" data-toggle="tab">Google News</a></li>
-          </ul>
-        </div> <!--buttons-->
-        <div class="tab-content">
-          <div class="tab-pane active" id="nytimes">
-            <div id="nytimes"></div>
-          </div>
-          <div class="tab-pane" id="theguardian">
-      	    <div id="guardian"></div>
-      	  </div>
-          <div class="tab-pane" id="googlenews">
-            <div id="google"></div>
-          </div>
-        </div> <!--content-->
-      </div> <!--end news-->
+      <div class="row">
+        <div class="col-xs-12">
+          <!--buttons here-->
+          <div>
+            <ul class="nav nav-tabs nav-justified">
+              <li class="nav active"><a href="#nytime" data-toggle="tab">The New York Times</a></li>
+              <li class="nav"><a href="#theguardian" data-toggle="tab">The Guardian</a></li>
+              <li class="nav"><a href="#googlenews" data-toggle="tab">Google News</a></li>
+            </ul>
+          </div> <!--buttons-->
+          <div class="tab-content">
+            <div class="tab-pane active" id="nytime">
+              <div id="nytimes"></div>
+            </div>
+            <div class="tab-pane" id="theguardian">
+        	    <div id="guardian"></div>
+        	  </div>
+            <div class="tab-pane" id="googlenews">
+              <div id="google"></div>
+            </div>
+          </div> <!--content-->
+        </div> <!--end news-->
+      </div>
       <!--public-->
-      <div class="">
-        <h2>Public</h2>
-        <p>Hashtags <a href="https://twitter.com/search?src=typd&q=prayforparis">PrayforParis</a>, <a href="https://twitter.com/search?src=typd&q=parisattacks">ParisAttacks</a> and <a href="https://twitter.com/search?src=typd&q=paris">Paris</a> shot up across Twitter and Instagram. Facebook revealed new features like the ability to check in as safe and temporary profile pictures overlaid with the French flag to show support.</p>
+      <div class="row">
+        <div class="col-xs-12">
+          <h2>Public</h2>
+          <p>Hashtags <a href="https://twitter.com/search?src=typd&q=prayforparis">PrayforParis</a>, <a href="https://twitter.com/search?src=typd&q=parisattacks">ParisAttacks</a> and <a href="https://twitter.com/search?src=typd&q=paris">Paris</a> shot up across Twitter and Instagram. Facebook revealed new features like the ability to check in as safe and temporary profile pictures overlaid with the French flag to show support.</p>
+        </div>
       </div>
       <div>
         <ul class="nav nav-tabs nav-justified">
@@ -78,19 +90,25 @@
         </div>
       </div>
     </div>
-    <br>
     <!--footer-->
     <div class="row" id="footer">
-      <a href="#navigation"><p>Back to Top</p></a>
+      <div class="col-xs-6">
+        <a href="#navigation"><p>Back to Top</p></a>
+      </div>
+      <div class="col-xs-6">
+        <a href="beirut.html"><p>Beirut &#62;</p></a>
+      </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script> <!--jquery-->
     <script src="js/bootstrap.min.js"></script> <!--bootstrap-->
+    <script src="js/paris_flickr.js"></script>
+    <script src="js/paris_news.js"></script>
     <script src="js/paris_map.js"></script>
     <script async defer
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBoWkX1I925m5A4tFkw6cFHbIpjER-kaqs&callback=initMap">
     </script>
-    <script src="js/paris_news.js"></script>
-    <script src="js/paris_flickr.js"></script>
+
+
   </body>
 </html>

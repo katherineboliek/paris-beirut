@@ -15,58 +15,70 @@
       <div class="col-xs-7"><a href="index.html">Two Days, Two Attacks</a></div>
       <!--button options-->
       <div class="col-xs-5">
-        <div class="col-xs-4"><a href="paris.html"><img src="css/parissm.png" height="20" width="20" class="nav-img"></a></div>
-        <div class="col-xs-4"><a href="beirut.html"><img src="css/beirutsm.png" height="20" width="20" class="nav-img"></a></div>
-        <div class="col-xs-4"><a href="comparison.html"><img src="css/comparesm.png" height="20" width="20" class="nav-img"></a></div>
+        <div class="col-xs-4"><a href="paris.html"><img src="css/parissm.png" height="24" width="24" class="nav-img"></a></div>
+        <div class="col-xs-4"><a href="beirut.html"><img src="css/beirutsm.png" height="24" width="24" class="nav-img"></a></div>
+        <div class="col-xs-4"><a href="comparison.html"><img src="css/comparesm.png" height="24" width="24" class="nav-img"></a></div>
       </div>
     </div>
     <div class="container">
       <!--summary of event-->
-      <div class="col-xs-12">
-        <h1>Beirut</h1>
-        <p>In Beirut, on November 12th, 2015, there were two suicide bombings in the marketplace of Bourj el-Barajneh, only a few minutes apart and several meters apart. A third man was discovered with explosives on him, but he was killed, most likely by one of the other blasts, before he could detonate his vest. 43 were killed in the attack and more than 200 were injured.</p>
+      <div class="row">
+        <div class="col-xs-12">
+          <h1>Beirut</h1>
+          <p>In Beirut, on November 12th, 2015, there were two suicide bombings in the marketplace of Bourj el-Barajneh, only a few minutes apart and several meters apart. A third man was discovered with explosives on him, but he was killed, most likely by one of the other blasts, before he could detonate his vest. 43 were killed in the attack and more than 200 were injured.</p>
+        </div>
       </div>
       <!--map-->
-      <div class="col-xs-12">
-        <div id="map"></div>
+      <div class="row">
+        <div class="col-xs-12">
+          <div id="map"></div>
+        </div>
       </div>
       <!--news-->
-      <div class="">
-        <h2>Media</h2>
-        <p>insert paragraph about media coverage</p>
+      <div class="row">
+        <div class="col-xs-12">
+          <h2>Media</h2>
+          <p>Only 11% of the top 500 news sources had a story on it within 24 hours <a href="http://www.huffingtonpost.com/entry/paris-and-beirut-data-show-how-social-media-shapes-coverage_564fdda8e4b0258edb31b56b">according to Huffington Post</a>, and 443 total news sources had covered it within 30 hours. Many articles written about it were written after the Paris attack, comparing the two assaults.</p>
+        </div>
       </div>
-      <div class="col-xs-12">
-        <!--buttons here-->
-        <div>
+      <div class="row">
+        <div class="col-xs-12">
+          <!--buttons here-->
+          <div>
+            <ul class="nav nav-tabs nav-justified">
+              <li class="nav active"><a href="#nytime" data-toggle="tab">The New York Times</a></li>
+              <li class="nav"><a href="#theguardian" data-toggle="tab">The Guardian</a></li>
+              <li class="nav"><a href="#googlenews" data-toggle="tab">Google News</a></li>
+            </ul>
+          </div> <!--buttons-->
+          <div class="tab-content">
+            <div class="tab-pane active" id="nytime">
+              <div id="nytimes"></div>
+            </div>
+            <div class="tab-pane" id="theguardian">
+        	    <div id="guardian"></div>
+        	  </div>
+            <div class="tab-pane" id="googlenews">
+              <div id="google"></div>
+            </div>
+          </div> <!--content-->
+        </div> <!--end news-->
+      </div>
+      <!--public-->
+      <div class="row">
+        <div class="col-xs-12">
+          <h2>Public</h2>
+          <p>The hashtags <a href="https://twitter.com/search?src=typd&q=prayforbeirut">PrayforBeirut</a>, <a href="https://twitter.com/search?src=typd&q=beirutattacks">BeirutAttacks</a> and <a href="https://twitter.com/search?src=typd&q=beirut">Beirut</a> spiked at the same time as the Paris hashtags. Most people did not even know about the Beirut bombing until seeing it compared to Paris on their social media feeds. The trends for Beirut came about as people noticed that this similar tragedy had hardly been mentioned on their social media.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
           <ul class="nav nav-tabs nav-justified">
-            <li class="nav active"><a href="#nytimes" data-toggle="tab">The New York Times</a></li>
-            <li class="nav"><a href="#theguardian" data-toggle="tab">The Guardian</a></li>
-            <li class="nav"><a href="#googlenews" data-toggle="tab">Google News</a></li>
+            <li class="nav active"><a href="#flickrtab" data-toggle="tab">Flickr</a></li>
+            <li class="nav"><a href="#twittertab" data-toggle="tab">Twitter</a></li>
           </ul>
         </div> <!--buttons-->
-        <div class="tab-content">
-          <div class="tab-pane active" id="nytimes">
-            <div id="nytimes"></div>
-          </div>
-          <div class="tab-pane" id="theguardian">
-      	    <div id="guardian"></div>
-      	  </div>
-          <div class="tab-pane" id="googlenews">
-            <div id="google"></div>
-          </div>
-        </div> <!--content-->
-      </div> <!--end news-->
-      <!--public-->
-      <div class="">
-        <h2>Public</h2>
-        <p>The hashtags <a href="https://twitter.com/search?src=typd&q=prayforbeirut">PrayforBeirut</a>, <a href="https://twitter.com/search?src=typd&q=beirutattacks">BeirutAttacks</a> and <a href="https://twitter.com/search?src=typd&q=beirut">Beirut</a> spiked at the same time as the Paris hashtags. Most people did not even know about the Beirut bombing until seeing it compared to Paris on their social media feeds. The trends for Beirut came about as people noticed that this similar tragedy had hardly been mentioned on their social media.</p>
       </div>
-      <div>
-        <ul class="nav nav-tabs nav-justified">
-          <li class="nav active"><a href="#flickrtab" data-toggle="tab">Flickr</a></li>
-          <li class="nav"><a href="#twittertab" data-toggle="tab">Twitter</a></li>
-        </ul>
-      </div> <!--buttons-->
       <div class="tab-content">
       <!--flickr-->
         <div class="tab-pane active" id="flickrtab">
@@ -80,19 +92,23 @@
         </div>
       </div>
     </div>
-    </br>
     <!--footer-->
     <div class="row" id="footer">
-      <a href="#navigation"><p>Back to Top</p></a>
+      <div class="col-xs-6">
+        <a href="#navigation"><p>Back to Top</p></a>
+      </div>
+      <div class="col-xs-6">
+        <a href="comparison.html"><p>Compare &#62;</p></a>
+      </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script> <!--jquery-->
     <script src="js/bootstrap.min.js"></script> <!--bootstrap-->
+    <script src="js/beirut_flickr.js"></script>
+    <script src="js/beirut_news.js"></script>
     <script src="js/beirut_map.js"></script>
     <script async defer
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBoWkX1I925m5A4tFkw6cFHbIpjER-kaqs&callback=initMap">
     </script>
-    <script src="js/beirut_news.js"></script>
-    <script src="js/beirut_flickr.js"></script>
   </body>
 </html>

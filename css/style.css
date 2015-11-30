@@ -58,6 +58,13 @@ hr.break {
   margin: auto;
 }
 
+.indexnav {
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+
 /*paris and beirut styling*/
 #navigation {
   padding: 10px 0 10px 10px;
@@ -66,7 +73,8 @@ hr.break {
 
 #navigation a {
   font-family: 'Oswald', sans-serif;
-  font-size: 17px;
+  font-weight: 400;
+  font-size: 19px;
   color: #ffffff;
 }
 
@@ -108,13 +116,13 @@ hr.break-twit {
 
 #footer {
   background-color: #262626;
-  padding: 7px 0 7px 0;
+  padding: 9px 0 3px 0;
 }
 
 #footer p {
   font-family: 'Oswald', sans-serif;
   font-size: 19px;
-  font-weight: 400;
+  font-weight: 300;
   color: #ffffff;
   text-align: center;
 }
@@ -123,6 +131,9 @@ hr.break-twit {
   text-decoration: none;
 }
 
-
+.container {
+  padding-left: 25px;
+  padding-right: 25px;
+}
 /*insert media query to change map size for mobile and desktop*/
 /*iphone 6 { height: 40%; width: 360px;}*/
